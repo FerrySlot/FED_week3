@@ -1,0 +1,457 @@
+
+*
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* Mediaquerry ======================================================================*/
+@media (min-width: 30em) 
+{
+	body > header 
+	{
+		background-color:#AAA;
+	}
+}
+@media (min-width: 40em) 
+{
+	body > header 
+	{
+		background-color:#999;
+	}
+
+}
+@media (min-width: 50em) 
+{
+	body > header 
+	{
+		background-color:#888;
+	}
+}
+@media (min-width: 60em) 
+{
+	body > header 
+	{
+		background-color:#777;
+	}
+}
+
+
+
+
+/* body ============================================================================*/
+
+body
+{
+	max-width: 90em;
+	text-align: center;
+	margin: 0 auto;
+	background: #EEE;
+}
+
+body > header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+/* header =============================================================================*/
+header > h1
+{
+    order:2;
+}
+
+header > img
+{
+    order:1;
+    height: 8em;
+    width: 28em;
+    padding: 2em;
+}
+
+header > nav
+{
+    order:3;
+    text-decoration: none;
+    padding: 30px;
+}
+
+header nav ul
+{
+	list-style-type: none;
+	
+}
+
+header nav ul li
+{
+	display: inline;
+	padding: 1em;
+	background-color: #444;
+	border-radius: 10px;
+}
+
+@media (max-width: 45em) 
+{
+	header nav ul li
+	{
+		display: block;
+	}
+
+}
+@media (min-width: 45em) 
+{
+	header nav ul li
+	{
+		display: inline;
+	}
+
+}
+
+header nav ul li a
+{
+	width: 160px;
+	transition: transform 0.2s;
+	transform: scale(1);
+}
+header nav ul li a:hover
+{
+	transform: scale(1.5);
+}
+
+header > p
+{
+    order: 4;
+}
+
+header a
+{
+    color : #FFF;
+    order: 5;
+}
+
+header > form
+{
+    order: 6;
+}
+
+/*==============================================================================================*/
+
+main > form
+{
+	background-color: #FFF;
+	border-radius: 25px;
+	margin-top: 2em;
+	padding: 1em;
+}
+
+
+/*-------------------------------------------------*/
+main > form > fieldset
+{
+	padding: 1em;
+	margin: 1em;
+	display: inline-flex;
+	flex-direction: column;
+	width: 40em;
+}
+main > form > fieldset label
+{
+	display: block;
+	text-align: left;
+}
+main > form > fieldset label textarea
+{
+	display: block;
+}
+main > form > fieldset label input[type=radio]
+{
+	display: inline-flex;
+}
+main > form > fieldset label input[type=checkbox]
+{
+	display: inline-flex;
+}
+
+main > form > input[type=submit]
+{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+/*
+main > form > fieldset label input:checked[value="project"]
+{
+	width: 50px;
+	#stage { display: none; }
+}
+
+main > form > fieldset label input:checked[value="stage"]
+{
+	width: 50px;
+	#project { dispay: none; }
+}
+*/
+
+
+/* Ik wil ij aanmelden 
+main > form > fieldset:nth-of-type(2)
+{
+	padding: 1em;
+	margin: 1em;
+	display: inline-flex;
+}
+main > form > fieldset:nth-of-type(2) label
+{
+	display: block;
+	text-align: left;
+}
+main > form > fieldset:nth-of-type(2) label input
+{
+	display: inline-flex;
+}*/
+
+
+/*===================================================================================================*/
+
+.related article
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0em;
+    max-width: 16em;
+	max-height: 20em;
+	overflow-y: scroll;
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+}
+
+.related article:nth-of-type(odd)
+{
+	background-color: #FFF;
+}
+.related article:nth-of-type(even)
+{
+	background-color: #FFF;
+}
+
+.related article:nth-of-type(1)/*=================================================*/
+{
+
+}
+.related article:nth-of-type(1) header
+{
+	color: #FFF;
+
+}
+.related article:nth-of-type(1) footer
+{
+	color: #FFF;
+	background-color: grey;
+	order: 1;
+}
+.related article:nth-of-type(1) h3
+{
+	color: #FFF;
+	background-color: orange;
+}
+
+
+.related article:nth-of-type(2)/*=================================================*/
+{
+
+}
+.related article:nth-of-type(2) header
+{
+	color: #FFF;
+
+}
+.related article:nth-of-type(2) footer
+{
+	color: #FFF;
+	background-color: grey;
+	order: 1;
+}
+.related article:nth-of-type(2) h3
+{
+	color: #FFF;
+	background-color: orange;
+}
+
+
+.related article:nth-of-type(3)/*=================================================*/
+{
+
+}
+.related article:nth-of-type(3) header
+{
+	color: #FFF;
+
+}
+.related article:nth-of-type(3) footer
+{
+	color: #FFF;
+	background-color: grey;
+	order: 1;
+}
+.related article:nth-of-type(3) h3
+{
+	color: #FFF;
+	background-color: orange;
+}
+
+
+.related article:nth-of-type(4)/*=================================================*/
+{
+
+}
+.related article:nth-of-type(4) header
+{
+	color: #FFF;
+
+}
+.related article:nth-of-type(4) footer
+{
+	color: #FFF;
+	background-color: grey;
+	order: 1;
+}
+.related article:nth-of-type(4) h3
+{
+	color: #FFF;
+	background-color: orange;
+}
+
+
+.related article:nth-of-type(5)/*=================================================*/
+{
+
+}
+.related article:nth-of-type(5) header
+{
+	color: #FFF;
+
+}
+.related article:nth-of-type(5) footer
+{
+	color: #FFF;
+	background-color: grey;
+	order: 1;
+}
+.related article:nth-of-type(5) h3
+{
+	color: #FFF;
+	background-color: orange;
+}
+
+aside section
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+aside section h2
+{
+	flex-basis: 80em;
+}
+
+aside section article
+{
+    display: inline-flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0em;
+    background-color: #FFF;
+
+	max-width: 16em;
+	height: 20em;
+	/* overflow-y: scroll; */
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+}
+
+body > footer
+{
+	display: flex;
+	background-color: grey;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+body > footer section
+{
+	/*
+	border-style: solid;
+	border-color: white;
+	*/
+}
+
+body > footer section#sitemap
+{
+	order: 2;
+}
+
+body > footer section#sitemap > ul
+{
+	display: flex;
+	flex-basis: 80em;
+	padding-bottom: 1em;
+}
+
+body > footer section#sitemap > ul a
+{
+	color: #FFF;
+}
+
+body > footer section#sitemap > ul > li > a
+{
+	font-size: 1.5em;
+	padding: 1em;
+	line-height: 2em;
+}
+
+body > footer section#contact
+{
+
+	max-width: 16em;
+	order: 3;
+	justify-content: center;
+}
+
+body > footer section#search
+{
+
+	order: 1;
+}
+
+body > footer section#about
+{
+	order: 0;
+	max-width: 40em;
+}
+
+body > footer section#credits
+{
+	max-width: 16em;
+	order: 4;
+}
+
+body > footer p#feedback
+{
+	order: 5;
+}
