@@ -73,6 +73,7 @@ header > img
     height: 8em;
     width: 28em;
     padding: 2em;
+    /* align-self: flex-start; */
 }
 
 header > nav
@@ -94,6 +95,7 @@ header nav ul li
 	padding: 1em;
 	background-color: #444;
 	border-radius: 10px;
+	box-shadow: 1px 1px 5px #000;
 }
 
 @media (max-width: 45em) 
@@ -122,7 +124,10 @@ header nav ul li a
 header nav ul li a:hover
 {
 	transform: scale(1.5);
+	text-shadow: 1px 1px 10px #000;
+
 }
+
 
 header > p
 {
@@ -138,6 +143,12 @@ header a
 header > form
 {
     order: 6;
+}
+
+h1 + p
+{
+	padding: 1em;
+	font-size: 1.2em;
 }
 
 /*==============================================================================================*/
@@ -185,19 +196,19 @@ main > form > input[type=submit]
 	justify-content: center;
 }
 
-/*
+
 main > form > fieldset label input:checked[value="project"]
 {
 	width: 50px;
-	#stage { display: none; }
+	/* #stage { display: none; } */
 }
 
 main > form > fieldset label input:checked[value="stage"]
 {
 	width: 50px;
-	#project { dispay: none; }
+	/* #project { dispay: none; } */
 }
-*/
+
 
 
 /* Ik wil ij aanmelden 
